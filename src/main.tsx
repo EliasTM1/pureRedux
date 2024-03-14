@@ -6,7 +6,6 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { Provider } from "react-redux";
 
 store.dispatch({ type: "account/deposit", payload: 250 });
-console.log(store.getState(), "MY STATE");
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>

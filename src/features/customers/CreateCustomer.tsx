@@ -8,8 +8,7 @@ function Customer() {
 	const dispatch = useDispatch();
 
 	function handleClick() {
-		console.log("handlingClick");
-		// if(!fullName || !nationalId) return
+		if(!fullName || !nationalId) return
 		dispatch(createCustomer(fullName, nationalId));
 	}
 
